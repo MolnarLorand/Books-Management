@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Molnar_Lorand_Lab2.Models;
 
+
 namespace Molnar_Lorand_Lab2.Data
 {
     public class DbInitializer

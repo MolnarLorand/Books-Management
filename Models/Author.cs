@@ -9,9 +9,5 @@
 
         public ICollection<Book>? Books { get; set; }
 
-        public static implicit operator Author(string v)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

@@ -18,7 +18,7 @@ namespace Molnar_Lorand_Lab2.Data
                 //!!Atentie in tabelel Books si Authors au fost introduse dare in laboratorul anterior.
                 //Ne vom asigura ca datele pe care dorim sa le introducem in Orders, Publishers
                 //si PublishedBook sunt consistente
-                var orders = new Order[]
+       /*         var orders = new Order[]
                {
             new Order{BookID=7,CustomerID=1,OrderDate=DateTime.Parse("2021-02-25")},
             new Order{BookID=8,CustomerID=2,OrderDate=DateTime.Parse("2021-09-28")},
@@ -75,10 +75,10 @@ namespace Molnar_Lorand_Lab2.Data
                 {
                     context.PublishedBooks.Add(pb);
                 }
-                context.SaveChanges();
-            }
+                context.SaveChanges(); */
+            } 
 
-        }
+        } 
 
     }
 

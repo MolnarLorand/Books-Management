@@ -1,6 +1,5 @@
 ﻿@*@model IEnumerable<Molnar_Lorand_Lab2.Models.Book>*@
 @model PaginatedList<Molnar_Lorand_Lab2.Models.Book>
-
 @{
     ViewData["Title"] = "Index";
 }
@@ -19,6 +18,7 @@
         </p>
     </div>
 </form>
+
 <table class="table">
     <thead>
         <tr>
@@ -26,35 +26,49 @@
                 <a asp-action="Index" asp-route-sortOrder="@ViewData["TitleSortParm"]" asp-routecurrentFilter="@ViewData["CurrentFilter"]">Title</a>
             </th>
             <th>
-                Author
+                Author First Name
+
+            </th>
+            <th>
+                Author Last Name
+
             </th>
             <th>
                 <a asp-action="Index" asp-route-sortOrder="@ViewData["PriceSortParm"]" asp-routecurrentFilter="@ViewData["CurrentFilter"]">Price</a>
             </th>
+
+            <th></th>
+
+
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Author)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem =>item.Author.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Author.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
+
 @{
     var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
     var nextDisabled = !Model.HasNextPage ? "disabled" : "";

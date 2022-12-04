@@ -13,7 +13,7 @@ namespace Molnar_Lorand_Lab2.Models
         public ICollection<Order>? Orders { get; set; }
         public int? AuthorID { get; set; }
         public Author? Author { get; set; }
-        public ICollection<PublishedBook> PublishedBooks { get; set; }
+        public ICollection<PublishedBook>? PublishedBooks { get; set; }
 
 
     }

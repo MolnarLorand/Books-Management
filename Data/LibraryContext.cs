@@ -19,7 +19,7 @@ namespace Molnar_Lorand_Lab2.Data
 
         public DbSet<Publisher> Publishers { get; set; }
         public DbSet<PublishedBook> PublishedBooks { get; set; }
-
+        public DbSet<City> City { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -28,11 +28,10 @@ namespace Molnar_Lorand_Lab2.Data
             modelBuilder.Entity<Book>().ToTable("Book");
             modelBuilder.Entity<Publisher>().ToTable("Publisher");
             modelBuilder.Entity<PublishedBook>().ToTable("PublishedBook");
+            modelBuilder.Entity<City>().ToTable("City");
             modelBuilder.Entity<PublishedBook>().HasKey(c => new { c.BookID, c.PublisherID });//configureaza cheia primara compusa
 
         }
-        public DbSet<Molnar_Lorand_Lab2.Models.Author> Author { get; set; }
-        public DbSet<Molnar_Lorand_Lab2.Models.City> City { get; set; }
     }
 
 }

@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Molnar_Lorand_Lab2.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Molnar_Lorand_Lab2.Data;
 using Molnar_Lorand_Lab2.Models;
 
 namespace Molnar_Lorand_Lab2.Controllers

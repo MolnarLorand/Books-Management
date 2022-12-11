@@ -2,6 +2,7 @@
 using Molnar_Lorand_Lab2.Models;
 using System.Security.Policy;
 using Publisher = Molnar_Lorand_Lab2.Models.Publisher;
+using System.Collections.Generic;
 
 namespace Molnar_Lorand_Lab2.Data
 {
@@ -31,6 +32,7 @@ namespace Molnar_Lorand_Lab2.Data
 
         }
         public DbSet<Molnar_Lorand_Lab2.Models.Author> Author { get; set; }
+        public DbSet<Molnar_Lorand_Lab2.Models.City> City { get; set; }
     }
 
 }

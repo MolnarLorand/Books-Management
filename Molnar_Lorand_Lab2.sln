@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Molnar_Lorand_Lab2", "Molnar_Lorand_Lab2.csproj", "{6E66FE38-5047-4583-A0D4-4C658E5B8B36}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Molnar_Lorand_Lab2", "Molnar_Lorand_Lab2.csproj", "{6E66FE38-5047-4583-A0D4-4C658E5B8B36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryModel", "..\LibraryModel\LibraryModel.csproj", "{D78BC0CE-B71F-47E6-9BB6-8FF059F13559}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryWebAPI", "..\LibraryWebAPI\LibraryWebAPI.csproj", "{145D1BA8-A0AA-4138-90B0-39221B850AD5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{6E66FE38-5047-4583-A0D4-4C658E5B8B36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E66FE38-5047-4583-A0D4-4C658E5B8B36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E66FE38-5047-4583-A0D4-4C658E5B8B36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D78BC0CE-B71F-47E6-9BB6-8FF059F13559}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D78BC0CE-B71F-47E6-9BB6-8FF059F13559}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D78BC0CE-B71F-47E6-9BB6-8FF059F13559}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D78BC0CE-B71F-47E6-9BB6-8FF059F13559}.Release|Any CPU.Build.0 = Release|Any CPU
+		{145D1BA8-A0AA-4138-90B0-39221B850AD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{145D1BA8-A0AA-4138-90B0-39221B850AD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{145D1BA8-A0AA-4138-90B0-39221B850AD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{145D1BA8-A0AA-4138-90B0-39221B850AD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

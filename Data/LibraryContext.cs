@@ -30,7 +30,6 @@ namespace Molnar_Lorand_Lab2.Data
             modelBuilder.Entity<PublishedBook>().HasKey(c => new { c.BookID, c.PublisherID });//configureaza cheia primara compusa
 
         }
-        public DbSet<Molnar_Lorand_Lab2.Models.Author> Author { get; set; }
     }
 
 }

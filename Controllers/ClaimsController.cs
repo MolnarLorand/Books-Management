@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 
-namespace Marian_Alexandra_Lab2.Controllers
+namespace Lorand_Molnar_Lab2.Controllers
 {
     [Authorize]
     public class ClaimsController : Controller
